@@ -9,6 +9,13 @@ comments and the pull requests that introduced them.
 - Artifact upload and inline-image caps are configurable through
   `MAX_ARTIFACTS_PER_TURN` and `MAX_INLINE_IMAGES` valves. Their defaults
   remain 25 uploaded files and 8 inline images per turn.
+- The README and the two credential valves now lead with the API key and
+  present the subscription token as a single-user option that Anthropic's
+  docs do not name for SDK-based products (they say "should use API key
+  authentication"; Legal and compliance, "Authentication and credential
+  use"). The old text called `claude setup-token` "the sanctioned way to run
+  the Agent SDK on a subscription", which overstated it. Behaviour is
+  unchanged: the token still wins when both are set.
 
 ## v0.2.2 (2026-09-13)
 
