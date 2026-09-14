@@ -4,6 +4,12 @@ Patches on top of [tfriedel/openwebui-claude-code](https://github.com/tfriedel/o
 commit `5bbc1fc`, in the order they landed. Numbering matches the pipe's own
 comments and the pull requests that introduced them.
 
+## Unreleased
+
+- Artifact upload and inline-image caps are configurable through
+  `MAX_ARTIFACTS_PER_TURN` and `MAX_INLINE_IMAGES` valves. Their defaults
+  remain 25 uploaded files and 8 inline images per turn.
+
 ## v0.2.2 (2026-09-13)
 
 - Open WebUI 0.11 turned its model helpers async (`Files.insert_new_file`,
